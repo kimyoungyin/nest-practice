@@ -26,7 +26,7 @@
   search(@Query('year') searchingYear: string) {
   return `search!!! after ${searchingYear}`; // query
   }
-
+    // http://localhost:3000/movies/1234
   @Get('/:id')
   getOne(@Param('id') movieId: string) {
   return `we will get a one movie with the id: ${movieId}`; // param
