@@ -19,7 +19,8 @@
 - 항상 무언가를 사용하려면 요청해야 함(데코레이터)
 - 함수 매개변수에서 아래와 같이 실행
 - url 내부 param과 @Param 데코레이터 내부 param의 이름은 같아야 하지만, 매개변수의 이름은 달라도 됨
-  '''ts
+
+  ```ts
   // http://localhost:3000/movies/search?year=2000
   @Get('search')
   search(@Query('year') searchingYear: string) {
@@ -30,7 +31,7 @@
   getOne(@Param('id') movieId: string) {
   return `we will get a one movie with the id: ${movieId}`; // param
   }
-  '''
+  ```
 
 # Body 받아오기 : @Body
 
